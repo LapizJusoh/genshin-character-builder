@@ -9,3 +9,7 @@
   box-sizing: border-box;
   font-family: 'GenshinFont', Arial, sans-serif;
 }
+
+body {
+  min-height: 100vh;
+}

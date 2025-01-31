@@ -1,0 +1,72 @@
+/*
+Genshin Color Scheme
+Dark blue: #50596b
+Light: #ece5d8
+Font: #c5c2bc
+*/
+
+.body {
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.container {
+  width: 960px;
+  margin-inline: auto;
+}
+
+header {
+  background-color: #50596b;
+  color: #c5c2bc;
+  padding-block: 50px;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+}
+
+header .container h1 {
+  font-size: 3rem;
+}
+
+header .container ul {
+  display: flex;
+  gap: 20px;
+}
+
+header .container li {
+  list-style: none;
+}
+
+header .container li button {
+  cursor: pointer;
+  height: 30px;
+  width: 120px;
+  border-radius: 10px;
+}
+
+header .container li button:hover {
+  font-weight: 600;
+}
+
+main {
+  
+}
+
+footer {
+  background-color: #50596b;
+  color: #c5c2bc;
+  padding-block: 20px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+footer p {
+  margin-block: 10px;
+}
