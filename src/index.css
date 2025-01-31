@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'GenshinFont';
+  src: local('GenshinFont'), url(./fonts/zh-cn.ttf) format('truetype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'GenshinFont', Arial, sans-serif;
+}
