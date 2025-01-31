@@ -1,32 +1,33 @@
-import './App.css'
+import Header from './components/Header.jsx';
+import Footer from './components/Footer.jsx';
+import Home from './components/Home.jsx';
+import Characters from './components/Characters.jsx';
+import LogIn from './components/LogIn.jsx';
+import { useState } from 'react';
+import './App.css';
 
 function App() {
+  const [currentPage, setCurrentPage] = useState(`Home`);
+
+  function clickHome() {
+    setCurrentPage('Home');
+  };
+
+  function clickCharacters() {
+    setCurrentPage('Characters');
+  };
+
+  function clickLogIn() {
+    setCurrentPage('LogIn');
+  }
 
   return (
-    <div className='body'>
-      <header>
-        <div className='container'>
-          <h1>Genshin DB</h1>
-          <nav>
-            <ul>
-              <li><button>Home</button></li>
-              <li><button>Characters</button></li>
-              <li><button>Contact</button></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-      <main>
-        <div className='container'>
-          Main
-        </div>
-      </main>
-      <footer>
-        <div className='container'>
-          <p>Copyright &copy; Lapiz Jusoh 2025-2025</p>
-          <p>Genshin API Data obtained from </p>
-        </div>
-      </footer>
+    <div>
+      <Header goToHome={clickHome} goToCharacters={clickCharacters} goToLogIn={clickLogIn} />
+      {(currentPage===`Home`) ? <Home /> : ''}
+      {(currentPage===`Characters`) ? <Characters /> : ''}
+      {(currentPage===`LogIn`) ? <LogIn /> : ''}
+      <Footer />
     </div>
   )
 }

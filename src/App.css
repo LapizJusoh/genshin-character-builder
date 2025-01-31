@@ -5,13 +5,6 @@ Light: #ece5d8
 Font: #c5c2bc
 */
 
-.body {
-  min-height: 100vh;
-  display: flex;
-  flex-flow: column;
-  justify-content: space-between;
-}
-
 .container {
   width: 960px;
   margin-inline: auto;
@@ -20,14 +13,14 @@ Font: #c5c2bc
 header {
   background-color: #50596b;
   color: #c5c2bc;
-  padding-block: 50px;
+  height: 150px;
+  display: flex;
 }
 
 header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid black;
 }
 
 header .container h1 {
@@ -55,18 +48,29 @@ header .container li button:hover {
 }
 
 main {
-  
+  background-color: #ece5d8;
+  height: calc(100vh - 230px);
+}
+
+main .container {
+  border: 1px solid black;
+  padding-block: 50px;
 }
 
 footer {
   background-color: #50596b;
   color: #c5c2bc;
-  padding-block: 20px;
+  height: 80px;
   text-align: center;
   font-size: 1rem;
   font-weight: lighter;
+  display: flex;
 }
 
 footer p {
   margin-block: 10px;
+}
+
+footer a {
+  color: #c5c2bc;
 }
