@@ -8,7 +8,7 @@ export default function Footer() {
         <p>
           Genshin API Data obtained from{" "}
           <a href="https://github.com/genshindev/api" target="_blank">
-            GenshinDev API
+            Genshin.Dev API
           </a>
         </p>
       </div>

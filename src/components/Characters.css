@@ -19,11 +19,12 @@
 }
 
 #characters ul li {
-  width: 175px;
-  height: 175px;
-  border: black 1px solid;
   list-style: none;
-  display: flex; 
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+}
+
+#characters ul li img {
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
 }
