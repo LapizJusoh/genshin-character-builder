@@ -7,7 +7,7 @@ import { useState } from 'react';
 import './App.css';
 
 function App() {
-  const [currentPage, setCurrentPage] = useState(`Home`);
+  const [currentPage, setCurrentPage] = useState(`Characters`);
 
   function clickHome() {
     setCurrentPage('Home');

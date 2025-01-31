@@ -49,7 +49,7 @@ header .container li button:hover {
 
 main {
   background-color: #ece5d8;
-  height: calc(100vh - 230px);
+  min-height: calc(100vh - 230px);
 }
 
 main .container {
